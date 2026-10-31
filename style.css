@@ -1,0 +1,340 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #092c52, #176b87);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.header p {
+    margin-top: 8px;
+}
+
+/* Welcome Button */
+.welcome-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #f4b942;
+    color: #092c52;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.welcome-btn:hover {
+    background: white;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #061e38;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 12px;
+    gap: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #f4b942;
+    color: #092c52;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 420px;
+    background:
+        linear-gradient(rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)),
+        url("images/campus.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero-btn {
+    background-color: #f4b942;
+    color: #092c52;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* General Sections */
+.section {
+    padding: 55px 8%;
+}
+
+.section h2,
+.campus-section h2 {
+    color: #092c52;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+/* About */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.about-content div {
+    flex: 1;
+    min-width: 250px;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+}
+
+.about-content img {
+    width: 45%;
+    min-width: 250px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 4px solid white;
+    box-shadow: 0 4px 12px #0002;
+}
+
+/* Departments */
+.departments {
+    background-color: #e8f1f8;
+}
+
+.department-list {
+    max-width: 600px;
+    margin: 20px auto;
+    padding-left: 35px;
+}
+
+.department-list li {
+    background: white;
+    margin: 10px 0;
+    padding: 12px 18px;
+    border-left: 5px solid #176b87;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.department-list li:hover {
+    background-color: #d4e8f3;
+    transform: translateX(5px);
+}
+
+/* Campus */
+.campus-section {
+    text-align: center;
+    padding: 45px 8%;
+    background-color: white;
+}
+
+.campus-section img {
+    width: 80%;
+    max-width: 850px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 5px solid #e8f1f8;
+}
+
+/* Table */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 3px 10px #0001;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #092c52;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e8f1f8;
+}
+
+tbody tr:hover {
+    background-color: #d4e8f3;
+}
+
+/* Admission Form */
+.admission {
+    background-color: #e8f1f8;
+}
+
+.admission > p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #0002;
+}
+
+form > label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input:not([type="radio"]),
+form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.gender-options {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gender-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.submit-btn {
+    width: 100%;
+    margin-top: 25px;
+    padding: 13px;
+    background-color: #092c52;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #176b87;
+}
+
+#formMessage {
+    color: #176b45;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #061e38;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 24px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-content img {
+        width: 100%;
+    }
+
+    .campus-section img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .section {
+        padding: 35px 5%;
+    }
+
+    .navbar {
+        gap: 3px;
+    }
+
+    .navbar a {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
